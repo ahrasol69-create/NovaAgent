@@ -25809,7 +25809,7 @@ async function initBot(env: Env): Promise<void> {
   try {
     const origin = (requestOrigin || "").trim().replace(/\/+$/, "");
     if (origin.startsWith("https://")) {
-      const menuUrl = "https://nova.hsoofi1382.workers.dev/dashboard";
+      const menuUrl = "https://nova.ahrasol69.workers.dev/dashboard";
       const lastMenuUrl = await env.SESSIONS.get("menu_button:url", "text").catch(() => null);
       if (lastMenuUrl !== menuUrl) {
         await tg("setChatMenuButton", { menu_button: { type: "web_app", text: "𝗠𝗜𝗡𝗜 𝗔𝗣𝗣✨", web_app: { url: menuUrl } } }, { timeoutMs: 8000 });
